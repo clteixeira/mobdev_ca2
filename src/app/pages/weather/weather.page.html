@@ -1,0 +1,34 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Weather
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-item>
+      <p>Dublin Weather</p>
+    </ion-item>
+    <ion-item>
+    <span>
+    Temperature: {{(weatherValues.temp - 273).toFixed(0)}}
+  </span>
+</ion-item>
+
+<ion-item>
+  <span>
+  Humidity: {{weatherValues.humidity}}
+</span>
+</ion-item>
+
+<ion-item>
+  <span>
+  Pressure: {{weatherValues.pressure}}
+</span>
+</ion-item>
+
+  </ion-card>
+</ion-content>
+
