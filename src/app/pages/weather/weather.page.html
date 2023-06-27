@@ -1,6 +1,6 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
+    <ion-title class="ion-text-center">
       Weather
     </ion-title>
   </ion-toolbar>
@@ -9,24 +9,32 @@
 <ion-content>
   <ion-card>
     <ion-item>
-      <p>Dublin Weather</p>
+      <ion-col class="ion-text-center">
+        <p>Dublin Weather</p>
+      </ion-col>
     </ion-item>
     <ion-item>
-      <span>
-        Temperature: {{(weatherValues.temp - 273).toFixed(0)}}
-      </span>
-    </ion-item>
-
-    <ion-item>
-      <span>
-        Humidity: {{weatherValues.humidity}}
-      </span>
+      <ion-col class="ion-text-center">
+        <span>
+          Temperature: {{(weatherValues.temp - 273).toFixed(0)}}
+        </span>
+      </ion-col>
     </ion-item>
 
     <ion-item>
-      <span>
-        Pressure: {{weatherValues.pressure}}
-      </span>
+      <ion-col class="ion-text-center">
+        <span>
+          Humidity: {{weatherValues.humidity}}
+        </span>
+      </ion-col>
+    </ion-item>
+
+    <ion-item>
+      <ion-col class="ion-text-center">
+        <span>
+          Pressure: {{weatherValues.pressure}}
+        </span>
+      </ion-col>
     </ion-item>
   </ion-card>
 </ion-content>
@@ -35,7 +43,7 @@
   <ion-grid>
     <ion-row>
       <ion-col class="ion-text-center">
-        <img src="../../assets/img/weatherClimate.png" alt="" width="400" />
+        <img src="../../assets/img/weatherClimate.png" alt="" width="1000" />
       </ion-col>
     </ion-row>
   </ion-grid>
