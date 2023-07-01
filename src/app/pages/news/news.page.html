@@ -6,7 +6,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content >
+<ion-content [fullscreen]="true">
   <ion-card *ngFor="let article of data?.articles">
     <ion-img [src]="article.urlToImage"></ion-img>
 
